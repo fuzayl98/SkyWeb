@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SkyWeb</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="retry">Повторить</string>
+    <string name="load_error">Ошибка!</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="log_in">Войти</string>
+    <string name="pas_lenth">Длина пароля должна быть от 6 до 20 символов</string>
+    <string name="pas_space">Пароль не должен содержать пробелов</string>
+    <string name="pas_digit">Пароль должен содержать хотя бы одну цифру (0–9)</string>
+    <string name="pas_uppercase">Пароль должен содержать хотя бы одну заглавную букву (A-Z)</string>
+    <string name="pas_lowercase">Пароль должен содержать хотя бы одну строчную букву (a-z)</string>
+    <string name="req_field">*Обязательное поле</string>
+    <string name="invalid_email">Неверный адрес электронной почты</string>
+    <string name="weather_error">Не удалось получить данные о погоде</string>
+    <string name="auth">Авторизация</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:src="@tools:sample/avatars"
+                android:scaleType="centerCrop"
+                android:id="@+id/picture"
+                android:layout_margin="10dp"
+                app:bindImage="@{picturedata.downloadUrl}"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picture"
+                android:text="@{StringUtil.authorText(picturedata.author)}"
+                android:layout_margin="10dp"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <data>
+
+        <import type="com.fuzaylofficial.skyweb.customutlis.StringUtil"></import>
+
+        <variable
+            name="picturedata"
+            type="com.fuzaylofficial.skyweb.model.Picture" />
+    </data>
+</layout>

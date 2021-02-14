@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/picture_rv"
+        android:layout_alignParentTop="true"
+        tools:layoutManager="GridLayoutManager"
+        tools:listitem="@layout/pictures_item"
+        tools:spanCount="1"
+        android:layout_marginBottom="60dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_loading"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/retry"
+        android:layout_centerInParent="true"
+        android:text="@string/retry"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/retry"
+        android:text="@string/load_error"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
+</layout>
